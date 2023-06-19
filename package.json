@@ -1,7 +1,6 @@
 {
   "name": "yzhanui",
-  "private": true,
-  "version": "0.0.0",
+  "version": "1.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -12,12 +11,16 @@
     "prepare": "husky install",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs"
+    "docs:serve": "vitepress serve docs",
+    "test": "vitest",
+    "build:components": "node ./scripts/build.cjs",
+    "publish": "./scripts/publish.sh"
   },
   "dependencies": {
     "vue": "^3.2.47"
   },
   "devDependencies": {
+    "@testing-library/vue": "^7.0.0",
     "@typescript-eslint/eslint-plugin": "^5.59.11",
     "@typescript-eslint/parser": "^5.59.11",
     "@vitejs/plugin-vue": "^4.1.0",
@@ -27,6 +30,8 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.14.1",
+    "fs-extra": "^11.1.1",
+    "happy-dom": "^9.20.3",
     "husky": ">=7",
     "lint-staged": ">=10",
     "postcss": "^8.4.24",
@@ -40,6 +45,7 @@
     "vite": "^4.3.9",
     "vitepress": "^1.0.0-beta.2",
     "vitepress-theme-demoblock": "^2.0.2",
+    "vitest": "^0.32.2",
     "vue-tsc": "^1.4.2"
   },
   "lint-staged": {
