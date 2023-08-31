@@ -1,0 +1,25 @@
+@import '../../style/variable';
+
+.s-pagination {
+  display: flex;
+  /* your component style */
+  button[disabled]{
+    cursor: not-allowed;
+  }
+}
+
+.s-pager {
+  margin: 0;
+  list-style: none !important;
+  display: flex;
+  padding-left: 0;
+  li {
+    min-width: 24px;
+    cursor: pointer;
+    margin-top: 0 !important;
+    padding: 0 4px;
+  }
+  li.current {
+    color: rgb(96, 96, 255);
+  }
+}
