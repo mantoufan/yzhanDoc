@@ -1,0 +1,25 @@
+.s-virtual-list {
+  /* your component styles go here */
+  &__container {
+    height: 100%;
+    overflow: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  &__blank {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  & {
+    transform: translate3d(
+      0,
+      0,
+      0
+    ); // 中间的是列表区域在Y轴的偏移量，会跟随鼠标滚动实时变化
+  }
+}
