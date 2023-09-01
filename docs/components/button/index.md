@@ -1,10 +1,9 @@
 # 按钮 - Button
+
 :::demo 这是 HelloWorld 组件，可以传递 msg 
 ```vue
 <template>
-  <HelloWorld></HelloWorld>
+  <YButton type="primary">提交</YButton>
 </template>
 ```
 :::
-
-<Test></Test>
