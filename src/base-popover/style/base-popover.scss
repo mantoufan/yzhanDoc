@@ -1,0 +1,15 @@
+.s-base-popover {
+  position: absolute; // 子绝父相
+  background-color: white;
+  z-index: 1;
+
+  &__arrow {
+    position: absolute;
+    background: white;
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+    z-index: -1;
+    border: solid 1px #e4e7ed;
+  }
+}
