@@ -1,0 +1,1 @@
+import{_ as a,o as e,c as s,S as n}from"./chunks/framework.d66eaa6a.js";const m=JSON.parse('{"title":"YZhanUI Documents","description":"","frontmatter":{},"headers":[],"relativePath":"index.md","filePath":"index.md"}'),t={name:"index.md"},o=n("",11),l=[o];function p(r,i,c,h,d,u){return e(),s("div",null,l)}const C=a(t,[["render",p]]);export{m as __pageData,C as default};
