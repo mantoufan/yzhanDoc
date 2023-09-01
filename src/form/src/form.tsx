@@ -1,7 +1,6 @@
 import { computed, defineComponent, provide } from 'vue'
 import { FormContextToken, formProps, FormProps } from './form-type'
 import { FormItemContext } from './components/form-item-type'
-import formItem from './components/form-item'
 import { Values } from 'async-validator'
 
 export default defineComponent({
@@ -25,7 +24,7 @@ export default defineComponent({
     // 提供表单的上下文给后代使用
     provide(FormContextToken, {
       model: props.model,
-      rules: props.rules,
+      rules: props.rules!,
       addItem,
       removeItem
     })

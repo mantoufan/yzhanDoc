@@ -18,6 +18,11 @@ module.exports = {
         "@typescript-eslint",
         "vue"
     ],
+    "ignorePatterns": [
+        "build/",
+        "cli/build/",
+        "node_modules/"
+    ],
     "rules": {
     }
 }

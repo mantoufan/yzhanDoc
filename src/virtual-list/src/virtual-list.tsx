@@ -1,4 +1,4 @@
-import { defineComponent, onMounted, onUnmounted, toRefs, useSlots } from 'vue'
+import { defineComponent, onMounted, toRefs } from 'vue'
 import { virtualListProps, VirtualListProps } from './virtual-list-type'
 import { computed, ref } from 'vue'
 import '../style/virtual-list.scss'
@@ -50,31 +50,29 @@ export default defineComponent({
 
     return () => {
       return (
-        <Component.value
-          class="s-virtual-list__container"
-          ref={containerRef}
-          onScroll={scrollEvent}
-        >
-          {/* 数据最终高度，用于展示滚动条 */}
-          <div
-            class="s-virtual-list__blank"
-            style={{
-              height: `${data.value.length * itemHeight.value}px`
-            }}
-          ></div>
-          {/* 真正的数据列表 */}
-          <div
-            class="s-virtual-list"
-            style={{
-              transform: `translate3d(0, ${offsetY.value}px, 0)`
-            }}
-          >
-            {visibleData.value.map((item, index) =>
-              slots.default?.({ item, index })
-            )}
+        <Component.value ref={containerRef}>
+          <div class="s-virtual-list__container" onScroll={scrollEvent}>
+            {/* 数据最终高度，用于展示滚动条 */}
+            <div
+              class="s-virtual-list__blank"
+              style={{
+                height: `${data.value.length * itemHeight.value}px`
+              }}
+            ></div>
+            {/* 真正的数据列表 */}
+            <div
+              class="s-virtual-list"
+              style={{
+                transform: `translate3d(0, ${offsetY.value}px, 0)`
+              }}
+            >
+              {visibleData.value.map((item, index) =>
+                slots.default?.({ item, index })
+              )}
+            </div>
           </div>
         </Component.value>
-      )
+      ) // eslint-disable-line
     }
   }
 })

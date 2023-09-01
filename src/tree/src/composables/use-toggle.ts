@@ -16,7 +16,7 @@ export function useToggle(
       lazyLoadNodes(treeNode)
     }
   }
-
+  console.log(innerData, core, context)
   return {
     toggleNode
   }

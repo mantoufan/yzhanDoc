@@ -1,10 +1,10 @@
 import { App } from 'vue'
-import YButton from './src/button'
+import Button from './src/button'
 
-export { YButton }
+export { Button }
 
 export default {
   install(app: App) {
-    app.component(YButton.name, YButton)
+    app.component(Button.name, Button)
   }
 }
