@@ -47,7 +47,8 @@ const config = {
     config(md) {
       md.use(demoBlockPlugin)
     }
-  }
+  },
+  base: '/yzhanUI/'
 }
 
 export default config

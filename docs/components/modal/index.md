@@ -8,7 +8,7 @@
 <template>
   <YButton @click="open">打开模态框</YButton>
 
-  <YModal v-model="visible" title="小贴士" :show-close="false" center align-center :show-close="false">
+  <YModal v-model="visible" title="小贴士" :show-close="false" center align-center>
     <span>这是一条消息！</span>
     <template #footer>
       <div class="dialog-footer">

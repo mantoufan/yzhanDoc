@@ -5,8 +5,7 @@ import YzhanUI from '../../../scripts/entry'
 
 import 'vitepress-theme-demoblock/dist/theme/styles/index.css'
 import './iconfont/iconfont.css' // 根据 class 引入图标
-import './iconfont/iconfont.js' // 根据 symbol 引入 SVG
-
+// import './iconfont/iconfont.js' // 根据 symbol 引入 SVG
 
 export default {
   ...DefaultTheme,
