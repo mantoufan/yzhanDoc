@@ -1,7 +1,9 @@
 # yzhanUI
+[![npm](https://img.shields.io/npm/v/yzhanui)](https://www.npmjs.com/package/yzhanui)
 [![GitHub license](https://img.shields.io/github/license/mantoufan/yzhanweather)](https://github.com/mantoufan/yzhanweather/blob/main/LICENSE)
 ![ie11](https://img.shields.io/badge/IE-11-skyblue)   
-A UI Compoentents Library for Vue.js
+A UI Compoentents Library for Vue.js  
+基于 Vue.js 的 UI 组件库
 
 ## Quick Start
 ### Setup
